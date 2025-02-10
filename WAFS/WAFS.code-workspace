@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../WAFS backup"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "WAFS"
+	}
+}

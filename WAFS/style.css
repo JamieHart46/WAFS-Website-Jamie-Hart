@@ -1,0 +1,144 @@
+body {
+  font-family: system-ui;
+  background: rgb(229, 245, 227);
+  color: black;
+  margin: 0;
+}
+
+header {
+  background-color: mediumseagreen;
+  border: 2px;
+  height: 120px;
+  color: white;
+  padding-left: 10px;
+  text-align: left;
+  align-items: center;
+  font-size: 30px;
+  line-height: 60px;
+  display: flex;
+  justify-content: space-evenly;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 6px 8px 10px rgba(0, 0, 0, 0.1);
+}
+	
+.navigation a {
+	color: white;
+	text-align: center;
+  display: inline-block;
+  border: 3px solid white;
+  background-color: mediumseagreen;
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  line-height: 30px;
+  margin: 0 15px;
+  text-decoration: none;
+	}
+
+  /* De bovenstaande regels zorgen dat de naam die in de header heb gezet en de navigatie die ik gemaakt heb dmv flex naast 
+  en uit elkaar staan met gelijke hoeveelheid padding aan beide kanten en natuurlijk alle styling voor de border, tekststyle, kleuren, etc. */
+
+* {
+	box-sizing:border-box;
+}
+
+h2 {
+	padding-left: 10px;
+}
+	
+p {
+		padding-left: 5px;
+}	
+
+
+/* HEADER */
+
+nav {
+	display:flex;
+	flex-wrap: wrap;
+	gap:1em;
+}
+
+/* MAIN */
+
+section {
+	display:flex;
+	gap:1em;
+	padding:60px;
+	line-height: 20px;
+  scroll-margin-top: 130px;
+}
+
+section img {
+	max-width:100%;
+	border-radius: 1em;
+  border: 1px solid white;
+  box-shadow: 0 6px 8px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* section:nth-of-type(2),
+section:nth-of-type(4){
+	flex-direction:row-reverse;
+} */
+
+section:nth-of-type(even) {
+	flex-direction:row-reverse;
+}
+
+section div {
+	flex-basis:0;
+	flex-grow:2;
+
+	border:solid 1px black;
+	border-radius:1em;
+  background-color: white;
+	box-shadow: 0 4px 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+section ul {
+	flex-basis:0;
+	flex-grow:1;
+	
+	display:grid;
+	
+	margin:0;
+	padding:0;
+	list-style-type:"";
+}
+
+section li {
+	grid-area:1/1;
+}
+	
+.homeblock {
+	padding-top: 130px;
+}
+	
+footer {
+	list-style: none;
+	color: white;
+  background-color: mediumseagreen;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+  height: 200px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 6px 8px 10px rgba(0, 0, 0, 0.1)
+}
+
+footer img {
+  max-width: 20%;
+  max-height: 20%;
+  align-self: end;
+  padding-bottom: 10px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
